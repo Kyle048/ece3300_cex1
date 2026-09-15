@@ -22,7 +22,11 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
-	assign result = 0;
+	always @ (a)
+		begin
+			result=0;
+			result[a] = 1;
+		end
    
 endmodule
 
