@@ -25,7 +25,14 @@ module simple(
 	always @ (a)
 		begin
 			result=0;
-			result[a] = 1;
+			if (a == 0) assign result = 0;
+			if (a == 1) assign result = 1;
+			if (a == 2) assign result = 2;
+			if (a == 3) assign result = 3;
+			if (a == 4) assign result = 4;
+			if (a == 5) assign result = 5;
+			if (a == 6) assign result = 6;
+			if (a == 7) assign result = 7;
 		end
    
 endmodule
